@@ -1,5 +1,5 @@
 # Google Search CLone
-A simple Google Search homepage clone built using HTML and CSS
+A simple google search homepage clone built using HTML and CSS.
 
 ## Technologies Used
 - HTML5
