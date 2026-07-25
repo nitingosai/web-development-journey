@@ -1,6 +1,6 @@
 # Travel Destination
 
-A simple Travel Destination page built using HTML and CSS.
+A simple Travel Destination landing page built using HTML and CSS.
 
 ## Technologies Used
 
