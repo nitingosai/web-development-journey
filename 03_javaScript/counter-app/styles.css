@@ -1,0 +1,168 @@
+h1,
+h4,
+h5,
+h6,
+p {
+  display: inline-block;
+  margin: 0;
+}
+
+div {
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/* Utility Classes*/
+.head-txt-clr {
+  color: #05AFF2;
+}
+
+.main-txt-clr {
+  color: #f5f6fa;
+}
+
+.sub-txt-clr {
+  color: #a0a3bd;
+}
+
+.bg-clr1 {
+  background: linear-gradient(to right, #0460D9, #05AFF2);
+}
+
+.bg-clr2 {
+  background: linear-gradient(to right, #038C73, #04BF8A);
+}
+
+.black-bg {
+  background-color: #1e1e2e;
+}
+
+.sub-black-bg {
+  background-color: #2a2a40;
+}
+
+.center-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  width: 100%;
+  border: 2px solid #04BF8A;
+  border-radius: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+}
+
+.divider {
+  width: 30%;
+  height: 0px;
+  margin-bottom: 7px;
+  border: 0.1px solid #05AFF2;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #04BF8A;
+  padding: 10px 20px;
+}
+
+.num-box {
+  border: 2px solid #04BF8A;
+  border-radius: 20px;
+  background: #038C73;
+  padding: 10px 20px;
+}
+
+/* Utility classes end here*/
+
+main {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  flex-direction: column;
+  background-color: #011126;
+  box-shadow: 0px 0px 5px #05AFF2;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.titles {
+  margin-bottom: 30px;
+}
+
+#title {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+#sub-title {
+  font-weight: 400;
+  line-height: 2;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #04BF8A;
+}
+
+.list-sec-header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#count-el {
+  font-size: 130px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+#increnebt-btn {
+  margin-bottom: 10px;
+}
+
+#save-btn {
+  margin-bottom: 30px;
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+footer h5 {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}

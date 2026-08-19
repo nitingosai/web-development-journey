@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Counter App</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="titles center-align">
+        <h1 id="title" class="main-txt-clr">COUNTER</h1>
+        <h5 id="sub-title" class="sub-txt-clr">Count, Save, Repeat.</h5>
+      </div>
+
+      <section class="center-align">
+        <h4 class="section-title head-txt-clr">CURRENT COUNT</h4>
+        <div class="display">
+          <span id="count-el" class="main-txt-clr">0</span>
+        </div>
+
+        <button
+          id="increnebt-btn"
+          class="button main-txt-clr bg-clr1"
+          onclick="increment()"
+        >
+          INCREMENT
+        </button>
+
+        <button
+          id="save-btn"
+          class="button main-txt-clr bg-clr2"
+          onclick="saveCount()"
+        >
+          SAVE
+        </button>
+      </section>
+
+      <section>
+        <div class="list-sec-header">
+          <div class="divider"></div>
+          <h4 class="section-title head-txt-clr">LAST ENTRY</h4>
+          <div class="divider"></div>
+        </div>
+
+        <div class="list">
+          <div class="num-box">
+            <span id="saved-num" class="main-txt-clr">0</span>
+          </div>
+          <time datetime="" id="date" class="main-txt-clr"></time>
+        </div>
+      </section>
+
+      <footer>
+        <h5 class="sub-txt-clr">Keep counting, keep growing!</h5>
+      </footer>
+    </main>
+
+    <script src="logics.js"></script>
+  </body>
+</html>
