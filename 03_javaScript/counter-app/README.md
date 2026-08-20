@@ -53,7 +53,7 @@ Saves the current count, displays it as the last entry, shows the save time, and
 
 ## 🔗 Live Demo
 
-"View Live Demo" (YOUR_NETLIFY_LINK_HERE)
+"View Live Demo" (https://nitin-counter.netlify.app/)
 
 ## 💡 What I Learned
 
