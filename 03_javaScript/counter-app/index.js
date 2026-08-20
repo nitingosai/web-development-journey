@@ -1,11 +1,7 @@
 let count = 0;
-
 let countEl = document.getElementById("count-el");
 let savedNum = document.getElementById("saved-num");
 let date = document.getElementById("date");
-
-const now = new Date();
-const time = now.toLocaleTimeString();
 
 function increment() {
   count += 1;
@@ -14,8 +10,9 @@ function increment() {
 
 function saveCount() {
   savedNum.textContent = count;
+  const now = new Date();
+  const time = now.toLocaleTimeString();
   date.textContent = time;
-
-  count = 0
-  countEl.textContent = count
+  count = 0;
+  countEl.textContent = count;
 }
