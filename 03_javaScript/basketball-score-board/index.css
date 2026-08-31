@@ -1,0 +1,280 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  margin: 0px;
+  line-height: 1;
+}
+
+body {
+  margin: 0px;
+  background-image: url(assets/images/bg-img.png);
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px black;
+}
+
+main {
+  margin: 0px auto;
+  max-width: fit-content;
+  padding: 30px 20px;
+}
+
+@font-face {
+  src: url("assets/digital-dismay.otf");
+  font-family: "digital-dismay";
+}
+
+@font-face {
+  src: url("assets/led-board-7.regular.ttf");
+  font-family: "led-7";
+}
+
+.dismay {
+  font-family: "digital-dismay";
+  font-weight: 400;
+}
+
+.led-7 {
+  font-family: "led-7";
+  font-weight: 400;
+}
+
+.bebas-neue {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+
+.txt-blue {
+  color: #114a9f;
+}
+
+.txt-red {
+  color: #ea2d3a;
+}
+
+.txt-yellow {
+  color: #fc6100;
+}
+
+.txt-white {
+  color: #f7f8f9;
+}
+
+.txt-grey {
+  color: #d5d5d9;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading {
+  display: inline-block;
+  font-size: 70px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.sub-heading {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 0.1;
+}
+
+.score-sec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.team-logo {
+  width: 450px;
+}
+
+.score-board {
+  width: 230px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.main-heading {
+  margin-bottom: 5px;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.sec-heading {
+  margin: 10px 0px 10px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.display {
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 2px rgb(69, 76, 84);
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px 20px;
+}
+
+.score {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 150px;
+}
+
+.score-btns {
+  margin: 0px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.score-btn {
+  border-radius: 10px;
+  border: 2px solid rgb(69, 76, 84);
+  background-color: rgb(16, 19, 23);
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.1s;
+  padding: 10px;
+}
+
+.score-btn:active {
+  transform: scale(0.95);
+}
+
+.quarter-board {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.mini-display {
+  width: 100%;
+  box-shadow: 0px 0px 1px rgb(69, 76, 84);
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  font-size: 65px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.panel {
+  width: fit-content;
+  margin: 3px auto 0px auto;
+  display: flex;
+  box-shadow: 0px 0px 3px rgb(69, 76, 84);
+  border-radius: 10px;
+  background-color: rgb(16, 19, 23);
+  padding: 10px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.panel-btn {
+  width: 100px;
+  margin-top: 10px;
+  border: 1px solid rgb(69, 76, 84);
+  border-radius: 5px;
+  background: transparent;
+  font-size: 14px;
+  transition: 0.1s;
+  text-align: center;
+  padding: 5px;
+}
+
+.panel-btn:active {
+  transform: scale(0.95);
+}
+
+.panel-box {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 2px rgb(69, 76, 84);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nxt-quarter {
+  display: block;
+  margin: 0px auto;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(rgb(237, 101, 8), rgb(167, 60, 6));
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 50px;
+  transition: 0.1s;
+}
+
+.nxt-quarter:active {
+  transform: scale(0.95);
+}
+
+#score-board1 {
+  background: linear-gradient(rgb(11, 64, 142), rgba(7, 40, 91));
+  border: 2px solid rgba(17, 74, 159);
+}
+
+#score-board2 {
+  background: linear-gradient(rgb(164, 15, 30), rgba(84, 21, 16));
+  border: 2px solid rgb(234, 45, 58);
+}
+
+#b1-scr-btn-el1,
+#b1-scr-btn-el2,
+#b1-scr-btn-el3 {
+  border: 2px solid rgb(17, 74, 159);
+}
+
+#b2-scr-btn-el1,
+#b2-scr-btn-el2,
+#b2-scr-btn-el3 {
+  border: 2px solid rgb(234, 45, 58);
+}
+
+#foul-btn1,
+#timeout-btn1 {
+  border-color: rgb(17, 74, 159);
+}
+
+#foul-btn2,
+#timeout-btn2 {
+  border-color: rgb(234, 45, 58);
+}
+
+#possession-box {
+  width: 400px;
+}
+
+#possession-el {
+  font-size: 50px;
+  max-width: 350px;
+  padding: 17px 0px;
+}

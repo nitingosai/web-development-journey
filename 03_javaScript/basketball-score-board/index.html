@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Score Board</title>
+  </head>
+  <body>
+    <main>
+      <section class="headings">
+        <h1 class="heading bebas-neue txt-white">
+          HOOP <span class="txt-yellow">ARENA</span>
+        </h1>
+        <span class="sub-heading txt-grey">BASKETBALL TURNAMENT</span>
+      </section>
+
+      <section class="score-sec">
+        <img
+          class="team-logo"
+          src="assets/images/team-tigers.png"
+          alt="Logo of team tigers."
+        />
+
+        <div id="score-board1" class="score-board">
+          <h1 class="main-heading bebas-neue txt-white">TIGERS</h1>
+          <div class="display digital">
+            <span id="score-el1" class="score dismay txt-red">0</span>
+          </div>
+          <div class="score-btns">
+            <button
+              id="b1-scr-btn-el1"
+              class="score-btn txt-white"
+              onclick="team1Increment1()"
+            >
+              +1
+            </button>
+            <button
+              id="b1-scr-btn-el2"
+              class="score-btn txt-white"
+              onclick="team1Increment2()"
+            >
+              +2
+            </button>
+            <button
+              id="b1-scr-btn-el3"
+              class="score-btn txt-white"
+              onclick="team1Increment3()"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+
+        <div class="quarter-board">
+          <h1 class="txt-grey sec-heading">QUARTER</h1>
+          <span id="quarter-el" class="mini-display dismay txt-yellow">1</span>
+        </div>
+
+        <div id="score-board2" class="score-board">
+          <h1 class="main-heading bebas-neue txt-white">HAWKS</h1>
+          <div class="display digital">
+            <span id="score-el2" class="score dismay txt-red">0</span>
+          </div>
+          <div class="score-btns">
+            <button
+              id="b2-scr-btn-el1"
+              class="score-btn txt-white"
+              onclick="team2Increment1()"
+            >
+              +1
+            </button>
+            <button
+              id="b2-scr-btn-el2"
+              class="score-btn txt-white"
+              onclick="team2Increment2()"
+            >
+              +2
+            </button>
+            <button
+              id="b2-scr-btn-el3"
+              class="score-btn txt-white"
+              onclick="team2Increment3()"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+
+        <img
+          class="team-logo"
+          src="assets/images/team-hawks.png"
+          alt="Logo of team hawks."
+        />
+      </section>
+
+      <section class="panel">
+        <div class="panel-box">
+          <h1 class="sec-heading txt-blue">FAULS</h1>
+          <span id="foul-el1" class="mini-display dismay txt-yellow">0</span>
+          <button
+            id="foul-btn1"
+            class="panel-btn txt-white"
+            onclick="team1Foul()"
+          >
+            +1
+          </button>
+        </div>
+
+        <div class="panel-box">
+          <h1 class="sec-heading txt-blue">TIMEOUTS</h1>
+          <span id="timeout-el1" class="mini-display dismay txt-yellow">5</span>
+          <button
+            id="timeout-btn1"
+            class="panel-btn txt-white"
+            onclick="decreTimeout1()"
+          >
+            TIMEOUT
+          </button>
+        </div>
+
+        <div id="possession-box" class="panel-box">
+          <h1 class="sec-heading txt-white">POSSESSION</h1>
+          <span id="possession-el" class="mini-display led-7 txt-yellow">
+            -
+          </span>
+
+          <div class="btn-wrapper">
+            <button
+              id="team1-possession-btn"
+              class="panel-btn txt-white"
+              onclick="possessionToTeam1()"
+            >
+              <
+            </button>
+
+            <button
+              id="team2-possession-btn"
+              class="panel-btn txt-white"
+              onclick="possessionToTeam2()"
+            >
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <h1 class="sec-heading txt-red">TIMEOUTS</h1>
+          <span id="timeout-el2" class="mini-display dismay txt-yellow">5</span>
+          <button
+            id="timeout-btn2"
+            class="panel-btn txt-white"
+            onclick="decreTimeout2()"
+          >
+            TIMEOUT
+          </button>
+        </div>
+
+        <div class="panel-box">
+          <h1 class="sec-heading txt-red">FAULS</h1>
+          <span id="foul-el2" class="mini-display dismay txt-yellow">0</span>
+          <button
+            id="foul-btn2"
+            class="panel-btn txt-white"
+            onclick="team2Foul()"
+          >
+            +1
+          </button>
+        </div>
+      </section>
+
+      <button id="nxt-quarter-btn" class="nxt-quarter" onclick="nxtQuarter()">
+        <span class="txt-white">NEXT QUARTER</span>
+      </button>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
