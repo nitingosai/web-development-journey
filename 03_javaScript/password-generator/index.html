@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <main class="panel-bg">
+      <h1 class="headline karla txt-main">
+        Generate a <span class="txt-green">random password</span>
+      </h1>
+      <p class="tagline txt-sub">Never use insecure password again.</p>
+
+      <section class="interact">
+        <div class="interact-area">
+          <input
+            type="number"
+            placeholder="Enter length"
+            id="pass-length"
+            class="pass-len light-bg txt-main"
+          />
+          <button
+            id="generate-pass"
+            class="generate-btn bg-green txt-main"
+            onclick="renderPasswords()"
+          >
+            Generate
+          </button>
+        </div>
+        <p id="instruction-el" class="instruction txt-green"></p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="display-area">
+        <span id="password-el1" class="display light-bg txt-green"></span>
+        <span id="password-el2" class="display light-bg txt-green"></span>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
