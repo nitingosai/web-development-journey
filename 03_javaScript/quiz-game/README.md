@@ -56,7 +56,7 @@ The final score is saved and displayed on the score page along with a message ba
 
 ## 🔗 Live Demo
 
-View Live Demo: YOUR_NETLIFY_LINK_HERE
+View Live Demo: https://nitin-quiz-game.netlify.app/html/home
 
 ## 💡 What I Learned
 
