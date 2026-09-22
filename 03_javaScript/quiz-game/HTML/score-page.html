@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>View Result</title>
+  </head>
+
+  <body>
+    <header class="logo bg-dark">
+      <img
+        class="logo-icon"
+        src="../assets/images/animal-paw.png"
+        alt="Yellow color paw of an animal."
+      />
+      <h1 class="logo-heading outfit txt-primary">
+        WildLife <span class="txt-gold">Adventure Quiz</span>
+      </h1>
+    </header>
+
+    <main id="score-content" class="bg-dark">
+      <div class="title-wrapper">
+        <h1 class="box-heading txt-primary">Quiz Completed!</h1>
+        <p class="box-tagline outfit txt-sub">
+          Great job! You explored the wild and gave it your best.
+        </p>
+      </div>
+
+      <section class="score-area glow-border bg-light">
+        <div class="display-score">
+          <img
+            src="../assets/images/score-log.png"
+            alt="The yellow badge shaped animal pow logo."
+            class="score-logo"
+          />
+          <div class="score-wrapper">
+            <h2 class="sub-heading txt-primary">Your Score</h2>
+            <h2 class="score-title outfit txt-primary">
+              <span id="total-score" class="total-score txt-gold"></span> / 5
+            </h2>
+          </div>
+        </div>
+        <p id="appreciate-el" class="appreciate glow-border txt-primary"></p>
+      </section>
+
+      <div class="btn-wrapper">
+        <a href="quiz-page.html">
+          <button
+            id="play-again"
+            class="CTA-btn glow-border bg-dark outfit txt-primary"
+          >
+            Play Again
+          </button>
+        </a>
+        <a href="home.html">
+          <button id="home-btn" class="CTA-btn glow-border bg-gold outfit txt-dark">
+            Back to Home
+          </button>
+        </a>
+      </div>
+    </main>
+
+    <script src="../score-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>Quiz Game</title>
+  </head>
+
+  <body id="quiz-page">
+    <header class="logo bg-dark">
+      <img
+        class="logo-icon"
+        src="../assets/images/animal-paw.png"
+        alt="Yellow color paw of an animal."
+      />
+      <h1 class="logo-heading outfit txt-primary">
+        WildLife <span class="txt-gold">Adventure Quiz</span>
+      </h1>
+    </header>
+
+    <main id="quiz-content" class="bg-dark">
+      <div class="box-title">
+        <h2 class="sub-heading txt-primary">
+          Question <span id="quiz-count" class="txt-gold">1</span> / 5
+        </h2>
+        <h2 class="sub-heading score glow-border txt-primary">
+          Score: <span id="score-el" class="txt-gold">0</span>
+        </h2>
+      </div>
+
+      <section class="question-box">
+        <div class="questions">
+          <h2 id="question-el" class="outfit txt-primary"></h2>
+        </div>
+        <section class="options">
+          <div class="option-row">
+            <button id="optionA-btn" class="option-box glow-border">
+              <span class="option-index bg-light txt-primary">A</span>
+              <div>
+                <span id="optionA-el" class="option txt-primary"></span>
+              </div>
+            </button>
+            <button id="optionB-btn" class="option-box glow-border">
+              <span class="option-index bg-light txt-primary">B</span>
+              <span id="optionB-el" class="option txt-primary"></span>
+            </button>
+          </div>
+          <div class="option-row">
+            <button id="optionC-btn" class="option-box glow-border">
+              <span class="option-index bg-light txt-primary">C</span>
+              <span id="optionC-el" class="option txt-primary"></span>
+            </button>
+            <button id="optionD-btn" class="option-box glow-border">
+              <span class="option-index bg-light txt-primary">D</span>
+              <span id="optionD-el" class="option txt-primary"></span>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <button id="next-btn" class="CTA-btn bg-gold txt-dark">Next</button>
+    </main>
+
+    <script src="../quiz-page.js"></script>
+  </body>
+</html>
