@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Unit Converter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="align-center">
+    <section class="interact-sec bg-primary align-center">
+      <h1 class="main-heading txt-main">Metric/Imperial Unit Conversion</h1>
+      <input
+        type="number"
+        id="input-el"
+        class="input-box bg-primary txt-main"
+      />
+      <div class="btn-wrapper">
+        <button id="convert-btn" class="btn bg-light txt-btn">Convert</button>
+        <button id="reset-btn" class="btn bg-light txt-btn">Reset</button>
+      </div>
+    </section>
+
+    <main class="align-center bg-surface">
+      <section class="unit-sec bg-section align-center">
+        <h2 class="sec-title txt-sub">Length (Meters/Feet)</h2>
+        <span class="sec-content txt-main">
+          <span class="unit-el">0</span> meters =
+          <span id="feet-el">0</span> feet | <span class="unit-el">0</span> feet
+          = <span id="meter-el">0</span> meters
+        </span>
+      </section>
+
+      <section class="unit-sec bg-section align-center">
+        <h2 class="sec-title txt-sub">Volume (Liters/Gallons)</h2>
+        <span class="sec-content txt-main">
+          <span class="unit-el">0</span> liters =
+          <span id="gallon-el">0</span> gallons |
+          <span class="unit-el">0</span> gallons =
+          <span id="liter-el">0</span> liters
+        </span>
+      </section>
+
+      <section class="unit-sec bg-section align-center">
+        <h2 class="sec-title txt-sub">Mass (Kilograms/Pounds)</h2>
+        <span class="sec-content txt-main">
+          <span class="unit-el">0</span> kg =
+          <span id="pound-el">0</span> pounds |
+          <span class="unit-el">0</span> pounds = <span id="kg-el">0</span> kg
+        </span>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
