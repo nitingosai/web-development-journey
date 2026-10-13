@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Note</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body-el" class="bg-page">
+    <header class="bg-header align-row">
+      <h1 class="logo txt-primary">
+        Keep <span class="txt-gradient">Notes</span>
+      </h1>
+      <h1 class="logo-tag txt-scndry">Write • Save • Stay Organized</h1>
+    </header>
+    <main class="bg-panel fix-box">
+      <section class="view-sec">
+        <div class="align-row">
+          <h2
+            contenteditable="true"
+            id="note-title"
+            class="panel-title txt-gradient"
+          ></h2>
+          <button id="delete-note-btn" class="delete-btn bg-danger align-row">
+            <img
+              src="../assets/images/trash.png"
+              alt="White colored trash bin icon"
+              class="icon"
+            />
+          </button>
+        </div>
+        <p
+          contenteditable="true"
+          id="view-note"
+          class="view-note fix-box txt-primary"
+        ></p>
+        <div class="btn-group align-row">
+          <a href="keep-notes.html">
+            <button class="btn txt-primary bg-btn">BACK</button>
+          </a>
+          <button id="save-note-btn" class="btn txt-primary bg-btn">
+            SAVE
+          </button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../javascript/view-note.js"></script>
+  </body>
+</html>

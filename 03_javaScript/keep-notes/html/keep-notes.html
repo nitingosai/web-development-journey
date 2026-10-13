@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keep Notes</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-page">
+    <header class="bg-header align-row">
+      <h1 class="logo txt-primary">
+        Keep <span class="txt-gradient">Notes</span>
+      </h1>
+      <h1 class="logo-tag txt-scndry">Write • Save • Stay Organized</h1>
+    </header>
+    <main class="bg-panel fix-box">
+      <h2 class="panel-title txt-primary">
+        Keep <span class="txt-gradient">Notes</span>
+      </h2>
+      <p class="title-tag txt-scndry">
+        Save your thoughts and ideas in one place.
+      </p>
+      <section class="interact-sec align-column">
+        <textarea
+          name="write-note"
+          id="write-note-el"
+          class="input bg-input txt-primary fix-box"
+        ></textarea>
+        <div class="wrapper align-row">
+          <input
+            id="set-title-el"
+            type="text"
+            placeholder="Note title..."
+            class="input bg-input txt-primary fix-box"
+          />
+          <button id="add-note-btn" class="btn bg-btn txt-primary">
+            Add Note
+          </button>
+        </div>
+      </section>
+      <section id="notes-list"></section>
+    </main>
+    <script type="module" src="../javascript/keep-note.js"></script>
+  </body>
+</html>
