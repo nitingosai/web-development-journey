@@ -57,10 +57,6 @@ Deletes a selected note from Firebase using `remove()`.
 
 Uses `localStorage` to store the selected note's index when navigating between the notes list and the individual note view.
 
-## 🔗 Live Demo
-
-View Live Demo: YOUR_NETLIFY_LINK_HERE  
-
 ## 💡 What I Learned
 
 This project helped me practice integrating Firebase Realtime Database into a JavaScript application and performing CRUD operations.
