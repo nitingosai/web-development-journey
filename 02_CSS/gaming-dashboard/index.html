@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHub — Gaming Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="bg-primary flex">
+    <menu class="bg-surface p-smll flex-column stretched">
+      <div class="logo flex gap-smll">
+        <div class="radius-20 bg-el p-smll">
+          <span class="txt-mdm bold-2 txt-primary">G</span>
+        </div>
+        <span class="txt-mdm bold-2 txt-primary"
+          >Game<span class="txt-spl-1">Hub</span></span
+        >
+      </div>
+      <section class="menu-items mt-smll flex-column">
+        <h2 class="txt-smll bold-1 txt-muted letter-space">MENU</h2>
+        <a
+          href="#"
+          class="current-view mt-smll p-smll radius-10 bold-1 txt-primary"
+          >Dashboard</a
+        >
+        <a href="#" class="p-smll radius-10 bold-1 txt-muted">My Library</a>
+        <a href="#" class="p-smll radius-10 bold-1 txt-muted">Discover</a>
+        <a href="#" class="p-smll radius-10 bold-1 txt-muted">Friends</a>
+      </section>
+
+      <section class="collections mt-lrg flex-column gap-lrg">
+        <h2 class="mt-lrg txt-smll bold-1 txt-muted letter-space">
+          YOUR COLLECTION
+        </h2>
+        <div class="flex gap-smll">
+          <img src="images/purple-dot.png" alt="Purple dot" class="dot" />
+          <a href="#" class="radius-10 bold-1 txt-muted">Recently Played</a>
+        </div>
+        <div class="flex gap-smll">
+          <img src="images/green-dot.png" alt="Green dot" class="dot" />
+          <a href="#" class="radius-10 bold-1 txt-muted">Favorites</a>
+        </div>
+        <div class="flex gap-smll">
+          <img src="images/orange-dot.png" alt="Orange dot" class="dot" />
+          <a href="#" class="radius-10 bold-1 txt-muted">Completed</a>
+        </div>
+      </section>
+
+      <div class="menu-footer">
+        <div class="perks-el border radius-20 p-smll flex-column">
+          <img src="images/icon-sparkle.png" alt="Sparkle icon" class="icon" />
+          <span class="bold-2 txt-primary">Level up your play</span>
+          <p class="mt-smll txt-smll txt-muted">
+            Keep your favorite games close.
+          </p>
+          <a
+            href="#"
+            aria-label="Button"
+            class="mt-mdm radius-10 bg-el p-smll txt-smll bold-1 txt-transp"
+            >Explore perks</a
+          >
+        </div>
+        <a class="mt-lrg flex" href="#">
+          <img src="images/setting-icon.png" alt="icon" class="icon" />
+          <span class="bold-1 txt-muted">Settings</span>
+        </a>
+      </div>
+    </menu>
+
+    <div class="flex-1">
+      <header class="border-b p-lrg flex gap-lrg">
+        <div class="tabs txt-muted">
+          Pages / <span class="bold-1 txt-primary">Dashboard</span>
+        </div>
+        <input
+          type="text"
+          placeholder="Search games..."
+          class="search border radius-10 bg-surface txt-smll txt-primary p-smll"
+        />
+        <div class="flex gap-smll">
+          <span class="profile radius-10 p-smll bold-2">N</span>
+          <div class="flex gap-smll">
+            <span class="bold-1 txt-primary">Nate</span>
+            <span class="txt-smll txt-muted">Lv. 24</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="p-lrg">
+        <div class="notification border radius-10 bg-surface p-smll flex sb">
+          <div class="flex gap-smll">
+            <img
+              src="images/icon-sparkle.png"
+              alt="Sparkle icon"
+              class="icon"
+            />
+            <div>
+              <span class="bold-1 txt-primary">You're all caught up!</span>
+              <p class="mt-smll txt-smll txt-muted">
+                No new notification right now.
+              </p>
+            </div>
+          </div>
+          <a href="#" class="bold-1 txt-muted">X</a>
+        </div>
+
+        <button class="message-btn radius-10 bg-el p-smll flex">
+          <img src="images/envelope.png" alt="Envelope icon" />
+        </button>
+
+        <header class="inner-header flex">
+          <div>
+            <span class="txt-smll bold-1 txt-spl-1 letter-space"
+              >SUNDAY, OCTOBER 18</span
+            >
+            <h1 class="mt-smll txt-mdm bold-2 txt-primary">
+              Welcome back, Nate <span class="txt-spl-1">✦</span>
+            </h1>
+            <p class="mt-mdm txt-muted">
+              Ready for another round? Here's what's happening in your world!
+            </p>
+          </div>
+          <button class="radius-10 bg-el bold-1 txt-primary p-smll">
+            Add a game
+          </button>
+        </header>
+
+        <section>
+          <div class="featured-game mt-lrg border radius-20 p-lrg">
+            <div>
+              <span class="new-tag txt-smll bold-1 txt-transp">NEW SEASON</span>
+            </div>
+            <span class="mt-lrg txt-smll bold-1 txt-spl-1 letter-space"
+              >FEATURED GAME</span
+            >
+            <h2 class="mt-smll txt-lrg bold-2 txt-primary">
+              Nebula<span class="block">Frontier</span>
+            </h2>
+            <p class="mt-mdm txt-primary">
+              A universe full of secrets. Your next adventure starts here.
+            </p>
+            <div class="mt-lrg flex gap-lrg">
+              <span class="txt-smll bold-1 txt-muted"
+                >⭐️ <span class="rating txt-normal">4.9</span> / 5.0</span
+              >
+              <a
+                href="#"
+                aria-label="Button"
+                class="btn radius-10 bg-el p-smll bold-1 txt-primary"
+              >
+                Explore game ↗
+              </a>
+            </div>
+          </div>
+          <div class="flex gap-smll">
+            <div
+              class="mt-lrg border radius-10 bg-surface p-smll flex-1 flex sb"
+            >
+              <div>
+                <span class="txt-muted">Total playtime</span>
+                <h2 class="mt-mdm txt-normal txt-muted">
+                  <span class="bold-2 txt-mdm txt-primary">248</span> hrs
+                </h2>
+                <p class="mt-mdm txt-muted">Compared to last month.</p>
+              </div>
+              <span class="txt-smll txt-spl-2">↗ 12.5%</span>
+            </div>
+            <div
+              class="mt-lrg border radius-10 bg-surface p-smll flex-1 flex sb"
+            >
+              <div>
+                <span class="txt-muted">Games played</span>
+                <h2 class="mt-mdm txt-mdm bold-2 txt-primary">18</h2>
+                <p class="mt-mdm txt-muted">Across all platforms.</p>
+              </div>
+              <span class="txt-smll txt-spl-2">↗ 2 games</span>
+            </div>
+            <div
+              class="mt-lrg border radius-10 bg-surface p-smll flex-1 flex sb"
+            >
+              <div>
+                <span class="txt-muted">Friends online</span>
+                <h2 class="mt-mdm txt-mdm bold-2 txt-primary">06</h2>
+                <p class="mt-mdm txt-muted">Out of 24 friends.</p>
+              </div>
+              <span class="txt-smll txt-muted">This week</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-lrg">
+          <span class="txt-smll bold-1 txt-spl-1 letter-space">YOUR SPACE</span>
+          <header class="mt-smll flex inner-header">
+            <h2 class="txt-mdm bold-2 txt-primary">Continue Playing</h2>
+            <a href="#" class="txt-smll bold-1 txt-spl-1">View library →</a>
+          </header>
+          <div class="mt-mdm flex gap-smll">
+            <section class="game-card-1 border radius-10 relative flex-1">
+              <div class="game-post p-smll flex-column">
+                <span class="hot-tag txt-smll bold-1 txt-transp absolute"
+                  >HOT</span
+                >
+                <h3 class="txt-mdm bold-2 txt-primary">
+                  SHADOW<span class="block">REALM</span>
+                </h3>
+              </div>
+              <div class="bg-primary p-smll">
+                <h3 class="mt-smll bold-2 txt-primary">Shadow Realm</h3>
+                <span class="mt-smll txt-smll bold-1 txt-muted"
+                  >Action RPG • 32.4 GB</span
+                >
+                <span class="mt-mdm txt-smll txt-muted block"
+                  >68% complete</span
+                >
+                <div class="mt-smll radius-10 bg-surface">
+                  <div class="prog-bar-1 radius-10"></div>
+                </div>
+              </div>
+            </section>
+            <section class="game-card-2 border radius-10 relative flex-1">
+              <div class="game-post p-smll flex-column">
+                <span class="new-tag txt-smll bold-1 txt-transp absolute"
+                  >NEW</span
+                >
+                <h3 class="txt-mdm bold-2 txt-primary">
+                  TIDAL<span class="block">ECHOES</span>
+                </h3>
+              </div>
+              <div class="bg-primary p-smll">
+                <h3 class="mt-smll bold-2 txt-primary">Tidal Echoes</h3>
+                <span class="mt-smll txt-smll bold-1 txt-muted"
+                  >Adventure • 18.2 GB</span
+                >
+                <span class="mt-mdm txt-smll txt-muted block"
+                  >24% complete</span
+                >
+                <div class="mt-smll radius-10 bg-surface">
+                  <div class="prog-bar-2 radius-10"></div>
+                </div>
+              </div>
+            </section>
+            <section class="game-card-3 border radius-10 relative flex-1">
+              <div class="game-post p-smll flex-column">
+                <span class="update-tag txt-smll bold-1 txt-transp absolute"
+                  >UPDATE</span
+                >
+                <h3 class="txt-mdm bold-2 txt-primary">
+                  NEON<span class="block">DRIFT</span>
+                </h3>
+              </div>
+              <div class="bg-primary p-smll">
+                <h3 class="mt-smll bold-2 txt-primary">Neon Drift</h3>
+                <span class="mt-smll txt-smll bold-1 txt-muted"
+                  >Racing • 46.1 GB</span
+                >
+                <span class="mt-mdm txt-smll txt-muted block"
+                  >91% complete</span
+                >
+                <div class="mt-smll radius-10 bg-surface">
+                  <div class="prog-bar-3 radius-10"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <div class="mt-lrg flex gap-smll">
+          <section class="border radius-10 bg-surface p-smll flex-1">
+            <span class="txt-smll txt-spl-1 bold-1 letter-space"
+              >RECENT UPDATES</span
+            >
+            <h2 class="mt-smll txt-mdm bold-2 txt-primary">Your Activity</h2>
+            <div class="mt-lrg border-b p-smll flex sb">
+              <div class="flex gap-lrg">
+                <div>
+                  <img
+                    src="images/icon-sparkle.png"
+                    alt="Sparkle icon."
+                    class="icon"
+                  />
+                </div>
+                <div class="flex-column flex-1">
+                  <span class="bold-1 txt-primary">Achievement unlocked</span>
+                  <p class="mt-smll txt-smll txt-muted">
+                    You earned
+                    <span class="bold-1 txt-primary">Star Explorer</span> in
+                    Nebula Frontier.
+                  </p>
+                  <span class="mt-mdm txt-smll txt-muted">12 minutes ago</span>
+                </div>
+              </div>
+              <span class="txt-smll bold-1 txt-spl-1">+250 XP</span>
+            </div>
+            <div class="mt-lrg border-b p-smll flex sb">
+              <div class="flex gap-lrg">
+                <div>
+                  <img
+                    src="images/icon-checkmark.png"
+                    alt="Checkmark icon."
+                    class="icon"
+                  />
+                </div>
+                <div class="flex-column flex-1">
+                  <span class="bold-1 txt-primary">Quest completed</span>
+                  <p class="mt-smll txt-smll txt-muted">
+                    Finished
+                    <span class="bold-1 txt-primary">The Forgotten Gate</span>
+                    in Shadow Realm.
+                  </p>
+                  <span class="mt-mdm txt-smll txt-muted">Yesterday</span>
+                </div>
+              </div>
+              <span class="txt-smll bold-1 txt-spl-1">Complete</span>
+            </div>
+            <div class="mt-lrg p-smll flex sb">
+              <div class="flex gap-lrg">
+                <div>
+                  <img
+                    src="images/icon-arrow.png"
+                    alt="Arrow icon."
+                    class="icon"
+                  />
+                </div>
+                <div class="flex-column flex-1">
+                  <span class="bold-1 txt-primary">New personal record</span>
+                  <p class="mt-smll txt-smll txt-muted">
+                    Your best lap in Neon Drift is now 01:38.
+                  </p>
+                  <span class="mt-mdm txt-smll txt-muted">2 days ago</span>
+                </div>
+              </div>
+              <span class="txt-smll bold-1 txt-spl-1">New best</span>
+            </div>
+          </section>
+          <section class="border radius-10 bg-surface p-smll flex-1 stretched">
+            <span class="txt-smll bold-1 txt-spl-1 letter-space"
+              >PLAY TOGETHER</span
+            >
+            <div class="flex sb">
+              <div class="flex gap-smll">
+                <h2 class="mt-smll txt-mdm bold-2 txt-primary">
+                  Friends online
+                </h2>
+                <span
+                  class="online-el radius-20 bg-spl-3 txt-smll bold-1 txt-spl-2"
+                  >6</span
+                >
+              </div>
+              <a href="#" class="txt-smll bold-1 txt-epl-1">See all</a>
+            </div>
+            <div class="mt-mdm border-b p-smll flex sb">
+              <div class="flex gap-smll">
+                <div class="profile radius-10 p-smll bold-2 stretched flex">
+                  <span class="bold-2 txt-transp">A </span>
+                </div>
+                <div class="flex-column flex-1">
+                  <div class="flex">
+                    <span class="bold-1 txt-primary">Alex Morgan</span>
+                    <img
+                      src="images/green-dot.png"
+                      alt="Green dot"
+                      class="dot"
+                    />
+                  </div>
+                  <span class="txt-smll txt-muted">Playing Shadow Realm</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="border radius-10 bg-spl-1 p-smll txt-smll bold-1 txt-spl-1"
+                aria-label="button"
+                >Invite</a
+              >
+            </div>
+            <div class="mt-mdm border-b p-smll flex sb">
+              <div class="flex gap-smll">
+                <div class="profile radius-10 p-smll bold-2 stretched flex">
+                  <span class="bold-2 txt-transp">M</span>
+                </div>
+                <div class="flex-column flex-1">
+                  <div class="flex">
+                    <span class="bold-1 txt-primary">Maya Chen</span>
+                    <img
+                      src="images/green-dot.png"
+                      alt="Green dot"
+                      class="dot"
+                    />
+                  </div>
+                  <span class="txt-smll txt-muted">In the main menu</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="border radius-10 bg-spl-1 p-smll txt-smll bold-1 txt-spl-1"
+                aria-label="button"
+                >Invite</a
+              >
+            </div>
+            <div class="mt-mdm p-smll flex sb">
+              <div class="flex gap-smll">
+                <div class="profile radius-10 p-smll bold-2 stretched flex">
+                  <span class="bold-2 txt-transp">J</span>
+                </div>
+                <div class="flex-column flex-1">
+                  <div class="flex">
+                    <span class="bold-1 txt-primary">Jordan Lee</span>
+                    <img
+                      src="images/green-dot.png"
+                      alt="Green dot"
+                      class="dot"
+                    />
+                  </div>
+                  <span class="txt-smll txt-muted">Playing Neon Drift</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="border radius-10 bg-spl-1 p-smll txt-smll bold-1 txt-spl-1"
+                aria-label="button"
+                >Invite</a
+              >
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="p-lrg flex sb txt-smll txt-muted">
+        <span>@ 2026 GameHub</span>
+        <span>For your next adventure ✦</span>
+      </footer>
+    </div>
+  </body>
+</html>

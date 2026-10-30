@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* General */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+body,
+menu,
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  line-height: 1;
+}
+span {
+  display: inline-block;
+}
+button {
+  display: inline-block;
+  border: none;
+  transition: 0.1s;
+  text-decoration: none;
+}
+button:active {
+  transform: scale(0.95);
+}
+a {
+  text-decoration: none;
+}
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+/* Typography */
+.txt-smll {
+  font-size: 0.75rem;
+}
+.txt-normal {
+  font-size: 0.875rem;
+}
+.txt-mdm {
+  font-size: 2rem;
+}
+.txt-lrg {
+  font-size: 2.5rem;
+}
+.bold-1 {
+  font-weight: 600;
+}
+.bold-2 {
+  font-weight: 800;
+}
+.txt-primary {
+  color: #f4f5fb;
+}
+.txt-muted {
+  color: #9298ad;
+}
+.txt-spl-1 {
+  color: #9a7cff;
+}
+.txt-spl-2 {
+  color: #59e0b1;
+}
+.txt-transp {
+  color: #0c0e14;
+}
+.letter-space {
+  letter-spacing: 2px;
+}
+
+/* Layout */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.sb {
+  justify-content: space-between;
+}
+.stretched {
+  align-self: stretch;
+}
+.block {
+  display: block;
+}
+.mt-smll {
+  margin-top: 10px;
+}
+.mt-mdm {
+  margin-top: 15px;
+}
+.mt-lrg {
+  margin-top: 24px;
+}
+.p-smll {
+  padding: 10px 15px;
+}
+.p-lrg {
+  padding: 24px 32px;
+}
+.gap-smll {
+  gap: 10px;
+}
+.gap-lrg {
+  gap: 24px;
+}
+.bg-primary {
+  background-color: rgb(12, 14, 20);
+}
+.bg-surface {
+  background-color: rgb(19, 22, 32);
+}
+.bg-el {
+  background-color: rgb(108, 90, 179);
+}
+.bg-spl-1 {
+  background-color: rgba(108, 90, 179, 10%);
+}
+.bg-spl-2 {
+  background-color: rgba(89, 100, 224, 10%);
+}
+.bg-spl-3 {
+  background-color: rgba(89, 224, 177, 10%);
+}
+.border {
+  border: 2px solid rgb(37, 42, 58);
+}
+.border-b {
+  border-bottom: 2px solid rgb(37, 42, 58);
+}
+.radius-10 {
+  border-radius: 10px;
+}
+.radius-20 {
+  border-radius: 20px;
+}
+
+/* Components */
+menu {
+  width: fit-content;
+  border-right: 2px solid rgb(37, 42, 58);
+}
+.logo {
+  margin-bottom: 46px;
+}
+.menu-items {
+  gap: 5px;
+}
+.menu-items a,
+.collections a {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.current-view {
+  border-left: 3px solid rgb(108, 90, 179);
+}
+.menu-items a:hover,
+.current-view {
+  background-color: rgba(108, 90, 179, 10%);
+  color: #f4f5fb;
+}
+.dot {
+  width: 15px;
+}
+.menu-footer {
+  margin: auto auto 0 0;
+}
+.perks-el {
+  overflow: hidden;
+}
+.perks-el img {
+  align-self: flex-end;
+}
+.perks-el a {
+  align-self: flex-start;
+  box-shadow: 0px 0px 500px 80px rgb(108, 90, 179);
+}
+.icon {
+  width: 30px;
+}
+header {
+  justify-content: end;
+}
+.tabs {
+  margin: 0 auto 0 0;
+}
+.search {
+  width: 250px;
+  outline: none;
+}
+.profile {
+  background: linear-gradient(to right, lightpink, skyblue);
+}
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.notification,
+.message-btn {
+  margin: 10px;
+  position: fixed;
+  z-index: 9999;
+}
+.notification {
+  width: 350px;
+  top: 90px;
+  right: 0;
+}
+.message-btn {
+  right: 0;
+  bottom: 0;
+}
+.message-btn img {
+  width: 22px;
+}
+.inner-header {
+  justify-content: space-between;
+}
+.featured-game {
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(13, 17, 23, 0.85) 0%,
+      rgba(13, 17, 23, 0.65) 10%,
+      rgba(13, 17, 23, 0.15) 20%,
+      rgba(13, 17, 23, 0) 30%
+    ),
+    url(images/nebula-frontier.jpg);
+  background-size: cover;
+}
+.featured-game p {
+  width: 300px;
+  line-height: 1.5;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+.rating {
+  color: yellow;
+}
+.game-card-1,
+.game-card-2,
+.game-card-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.game-card-1 {
+  background-image: url(images/shadow-realm.jpg);
+}
+.game-card-2 {
+  background-image: url(images/tidal-echoes.jpg);
+}
+.game-card-3 {
+  background-image: url(images/neon-drift.jpg);
+}
+.game-post {
+  height: 200px;
+}
+.game-post h3 {
+  margin: auto auto 0 0;
+}
+.hot-tag,
+.new-tag,
+.update-tag {
+  top: 10px;
+  right: auto;
+  bottom: auto;
+  left: 15px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.hot-tag {
+  background-color: rgb(255, 118, 148);
+}
+.new-tag {
+  background-color: rgb(89, 224, 177);
+}
+.update-tag {
+  background-color: rgb(246, 174, 66);
+}
+.prog-bar-1,
+.prog-bar-2,
+.prog-bar-3 {
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(108, 90, 179),
+    rgb(89, 100, 224),
+    rgb(89, 224, 177)
+  );
+}
+.prog-bar-1 {
+  width: 68%;
+}
+.prog-bar-2 {
+  width: 24%;
+}
+.prog-bar-3 {
+  width: 91%;
+}
+.online-el {
+  padding: 5px 8px;
+}

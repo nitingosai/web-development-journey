@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* General */
+body {
+  background-color: aqua;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+header {
+  border-bottom: 1px solid rgb(198, 198, 198);
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+ul {
+  margin: 0;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+section {
+  margin-bottom: 10px;
+}
+
+/* Typography */
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  line-height: 1;
+}
+.user-name,
+.post-likes,
+.commenter {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.user-location,
+.comment {
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+/* Common */
+.my-avatar,
+.user-avatar {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+}
+.user-info,
+.post-body {
+  padding: 10px;
+}
+.post-likes,
+.comment-box {
+  margin-top: 15px;
+}
+
+/* Layout */
+.align-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-row {
+  display: flex;
+  align-items: center;
+}
+.fix-box {
+  box-sizing: border-box;
+}
+.bg-panel {
+  background-color: rgb(255, 255, 255);
+}
+.mobile {
+  margin: 15px auto;
+  width: 375px;
+  height: 700px;
+  border: 7px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.mobile::-webkit-scrollbar {
+  display: none;
+}
+.logo {
+  display: block;
+  width: 100px;
+}
+.user-info img {
+  margin-right: 5px;
+}
+.user-name {
+  line-height: 1.3;
+}
+.user-post {
+  width: 100%;
+  height: 375px;
+}
+.interact-area {
+  gap: 10px;
+}
+.icon {
+  width: 25px;
+}
