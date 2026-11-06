@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamFlix — Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-primary">
+    <div
+      id="success-msg"
+      aria-live="polite"
+      class="border rounded-lg bg-surface p-sm"
+    >
+      <span class="txt-md txt-bold txt-primary"
+        >Feedback submitted successfully!</span
+      >
+    </div>
+
+    <header class="p-md p-lf flex justify-between">
+      <div class="flex gap-sm">
+        <span aria-label="Logo" class="txt-lg txt-bold txt-primary"
+          ><span class="txt-theme">STREAM</span>FLIX</span
+        >
+        <nav class="nav">
+          <ul class="flex gap-sm">
+            <li>
+              <a href="#" class="txt-md txt-muted">Share your feedback</a>
+            </li>
+            <li><a href="#" class="txt-md txt-muted">Community</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rounded-sm bg-element p-sm">
+        <span class="profile txt-md txt-bold txt-primary">N</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero p-lg p-lf flex justify-between">
+        <div>
+          <span class="txt-sm txt-bold txt-theme letter-space"
+            >YOUR VOICE MATTERS</span
+          >
+          <h1 class="hero-title mt-sm txt-bold txt-primary">
+            Stories are <span class="block">better</span
+            ><span class="block"
+              >when <span class="txt-theme">shared.</span></span
+            >
+          </h1>
+          <p class="hero-text mt-md txt-md txt-muted">
+            Tell us what you think about your streaming experience. Your
+            feedback helps make every viewing experience even better.
+          </p>
+          <a
+            href="#feedback-form"
+            id="hero-btn"
+            class="mt-md rounded-sm bg-element p-sm txt-md txt-bold txt-primary"
+            >Share your feedback</a
+          >
+        </div>
+        <div
+          role="img"
+          aria-label="Illustration of a red-and-white popcorn bucket filled with popcorn, movie tickets, and a film clapperboard."
+          class="hero-img"
+        ></div>
+      </section>
+
+      <section class="mt-lg">
+        <form id="feedback-form">
+          <fieldset class="flex-column item-center">
+            <div class="form-text">
+              <span class="mt-lg txt-sm txt-bold txt-theme letter-space"
+                >LET US KNOW</span
+              >
+              <legend>
+                <h2 class="mt-sm txt-lg txt-bold txt-primary">
+                  Share your experience
+                </h2>
+              </legend>
+              <p class="mt-md txt-sm txt-muted">
+                Your honest feedback makes a difference.
+              </p>
+            </div>
+            <div
+              class="form-container mt-lg border rounded-lg bg-surface p-md flex-column gap-lg"
+            >
+              <div class="flex-column">
+                <label for="input-name" class="txt-md txt-bold txt-primary"
+                  >Your name</label
+                >
+                <input
+                  type="text"
+                  name="userName"
+                  id="input-name"
+                  aria-describedby="name-required"
+                  class="mt-sm border rounded-sm bg-primary p-md txt-md txt-primary"
+                  placeholder="Enter your name"
+                />
+                <p id="name-required" class="warn-text txt-sm">
+                  Please enter your name.
+                </p>
+              </div>
+              <div class="flex-column">
+                <span class="txt-md txt-bold txt-primary">Your rating</span>
+                <ul
+                  id="star-container"
+                  aria-describedby="rating-required"
+                  class="flex"
+                >
+                  <li>
+                    <button
+                      type="button"
+                      id="star-1"
+                      aria-label="star-1"
+                      class="rating-star bg-surface txt-lg txt-muted"
+                    >
+                      ★
+                    </button>
+                  </li>
+
+                  <li>
+                    <button
+                      type="button"
+                      id="star-2"
+                      aria-label="star-2"
+                      class="rating-star bg-surface txt-lg txt-muted"
+                    >
+                      ★
+                    </button>
+                  </li>
+
+                  <li>
+                    <button
+                      type="button"
+                      id="star-3"
+                      aria-label="star-3"
+                      class="rating-star bg-surface txt-lg txt-muted"
+                    >
+                      ★
+                    </button>
+                  </li>
+
+                  <li>
+                    <button
+                      type="button"
+                      id="star-4"
+                      aria-label="star-4"
+                      class="rating-star bg-surface txt-lg txt-muted"
+                    >
+                      ★
+                    </button>
+                  </li>
+
+                  <li>
+                    <button
+                      type="button"
+                      id="star-5"
+                      aria-label="star-5"
+                      class="rating-star bg-surface txt-lg txt-muted"
+                    >
+                      ★
+                    </button>
+                  </li>
+                </ul>
+                <p id="rating-required" class="warn-text txt-sm">
+                  Please leave your rating.
+                </p>
+              </div>
+              <div class="flex-column">
+                <label for="feedback-el" class="txt-md txt-bold txt-primary"
+                  >Your feedback</label
+                >
+                <textarea
+                  name="userFeedback"
+                  id="feedback-el"
+                  aria-describedby="name-required"
+                  class="feedback mt-sm border rounded-sm bg-primary p-md txt-md txt-primary"
+                  placeholder="Tell us about your experience..."
+                ></textarea>
+                <p id="feedback-required" class="warn-text txt-sm">
+                  Please write a short feedback message.
+                </p>
+              </div>
+              <button
+                id="submit-btn"
+                class="rounded-sm bg-element p-sm txt-sm txt-bold txt-primary"
+              >
+                Submit feedback
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="mt-lg p-lg flex-column item-center">
+        <div>
+          <span class="txt-sm txt-bold txt-theme letter-space"
+            >WHAT PEOPLE ARE SAYING</span
+          >
+          <h2 class="mt-sm txt-lg txt-bold txt-primary">Community feedback</h2>
+          <div id="feedbacks" class="feedbacks mt-lg">
+            <div class="container border p-lg flex-column gap-sm item-center">
+              <span class="txt-lg txt-theme">✦</span>
+              <span class="txt-md txt-bold txt-primary"
+                >Be the first to share</span
+              >
+              <p class="txt-md txt-muted">
+                Your feedback will appear here after you submit the form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="p-md txt-sm txt-muted">
+        STREAMFLIX — An independent streaming-inspired frontend practice
+        project.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
