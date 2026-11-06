@@ -1,10 +1,10 @@
-StreamFlix Feedback Page
+# StreamFlix Feedback Page
 
 A modern streaming-inspired feedback collection page built as an HTML, CSS and JavaScript practice project.
 
 This project was created to practice JavaScript fundamentals, form handling and reusable code through an interactive feedback page.
 
-🚀 Features
+## 🚀 Features
 
 - Modern streaming-inspired landing page
 - Hero section with a popcorn and movie-themed illustration
@@ -18,27 +18,27 @@ This project was created to practice JavaScript fundamentals, form handling and 
 - Feedback submission success message
 - Clean and modern dark-themed UI
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
 
-📚 Concepts Practiced
+## 📚 Concepts Practiced
 
-HTML:
+### HTML:
 
 - Semantic HTML elements
 - Forms and form controls
 - "FormData"
 - Labels and accessibility attributes
 
-CSS:
+### CSS:
 
 - CSS utility classes
 - Reusable CSS styling
 
-JavaScript:
+### JavaScript:
 
 - "event.preventDefault()"
 - "FormData" and ".get()"
@@ -50,11 +50,11 @@ JavaScript:
 - Template literals
 - Array manipulation
 
-🔗 Live Demo
+## 🔗 Live Demo
 
 [View Live Demo](https://streamflix-feedback.netlify.app/#feedback-form)
 
-💡 What I Learned
+## 💡 What I Learned
 
 This project helped me practice JavaScript fundamentals by building an interactive feedback collection page.
 
@@ -64,6 +64,6 @@ I also practiced reusable CSS styling and applied different layout and visual st
 
 ---
 
-Status:
+## Status:
 
 Completed — HTML, CSS & JavaScript Practice Project
